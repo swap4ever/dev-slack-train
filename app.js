@@ -10,8 +10,8 @@ const app = new App({
 
 const CHANNEL_ID = process.env.CHANNEL_ID;
 
-let queue = [];
-let current = null;
+var queue = [];
+var current = null;
 
 (async () => {
 
@@ -133,4 +133,4 @@ let current = null;
 
     console.log(`⚡️ Slack Bolt app is running on port ${process.env.PORT}!`);
 
-})(app);
+})();
